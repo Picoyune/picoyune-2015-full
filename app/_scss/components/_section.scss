@@ -1,0 +1,41 @@
+section {
+	position: relative;
+	min-height: 100%;
+	padding: em(100px) 0;
+	text-align: center;
+
+	&:last-of-type {
+		.circle-down {
+			display: none;
+		}
+	}	
+}
+
+.homepage-logos {
+	margin-top: em(140px);
+}
+
+.award-logo {
+	margin-bottom: em(30px);
+	max-width: 60%;
+}
+
+.headshot {
+	margin: em(40px) 0;
+}
+
+.circle-down {
+	height: 32px;
+	width: 32px;
+	@include position(absolute, null null 36px 50%);
+	margin-left: -10px;
+	path {
+		fill: $medium-gray;
+		@include transition(fill .5s ease-in 0s);
+	}
+	&:hover {
+		path {
+			fill: $dark-gray;
+		}
+	}
+}

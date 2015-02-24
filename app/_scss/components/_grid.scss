@@ -1,0 +1,30 @@
+section {
+	@include outer-container;
+}
+
+.row {
+	@include row();
+	margin-bottom: em(80px);
+    @include media($mobile) {
+      margin-bottom: em(10px);
+    }	
+}
+
+.interior {
+	@include span-columns(10);
+	@include shift(1);
+}
+
+.one-half {
+	@include span-columns(6);
+	@include media($mobile) {
+    	@include span-columns(4);
+    }	
+}
+
+.one-third {
+	@include span-columns(4);
+	@include media($mobile) {
+    	@include span-columns(4);
+    }		
+}
