@@ -51,6 +51,18 @@ p {
   margin: 0 0 $small-spacing;
 }
 
+.left {
+  text-align: left;
+}
+
+figcaption {
+  text-align: left;
+}
+
+figure {
+  margin: 0 0 $small-spacing;
+}
+
 .map {
   text-align: left;
 }

@@ -2,6 +2,10 @@ section {
 	@include outer-container;
 }
 
+img {
+	max-width: 100%;
+}
+
 .row {
 	@include row();
 	margin-bottom: em(80px);
@@ -24,6 +28,13 @@ section {
 
 .one-third {
 	@include span-columns(4);
+	@include media($mobile) {
+    	@include span-columns(4);
+    }		
+}
+
+.two-thirds {
+	@include span-columns(8);
 	@include media($mobile) {
     	@include span-columns(4);
     }		
