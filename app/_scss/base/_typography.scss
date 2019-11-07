@@ -46,10 +46,11 @@ h6 {
 
 
 
-p {
-  font-size: $base-font-size * 1.2;
-  margin: 0 0 $small-spacing;
+p,ul{
+  font-size: $base-font-size * 1.1;
+  margin: 0 0 $base-spacing;
 }
+
 
 .left {
   text-align: left;
